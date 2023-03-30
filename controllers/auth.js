@@ -56,7 +56,13 @@ const sendTokenResponse = (user, statusCode, res) => {
     }
     res.status(statusCode)
         .cookie("token", token, option)
-        .json({ success: true, token });
+        .json({
+            success: true,
+            _id: user._id,
+            name: user.name,
+            email: user.email,
+            token,
+        });
 };
 
 exports.getMe = async (req, res, next) => {
