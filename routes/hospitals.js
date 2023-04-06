@@ -62,7 +62,7 @@
  *   get:
  *     summary: Returns the list of all the hospitals
  *     tags: [Hospitals]
- *     response:
+ *     responses:
  *       200:
  *         description: The list of the hospitals
  *         content:
