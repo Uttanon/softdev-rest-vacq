@@ -86,6 +86,15 @@
  *           type: string
  *         required: true
  *         description: The hospital id
+ *     responses:
+ *       200:
+ *         description: The hospital description by id
+ *         contents:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Hospital'
+ *       404:
+ *         description: The hospital was not found
  */
 
 /**
